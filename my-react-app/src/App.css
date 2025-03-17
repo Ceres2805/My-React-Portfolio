@@ -1,0 +1,336 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Consolas';
+  color: #333;
+}
+
+header {
+  margin-top: -2.7vw;
+  background-color: #ffffe5;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  background-image: url('assets/header_bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 37rem;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1 {
+  margin-top: 14rem;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  animation: slideInFromLeft 1.5s ease-in-out;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.5rem;
+  color: #666;
+  animation: slideInFromRight 1.5s ease-in-out;
+}
+
+section {
+  margin-bottom: 1rem;
+  padding-top: 0.02rem;
+}
+
+section h2 {
+  margin-top: 3rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #007bff;
+  font-weight: 700;
+}
+
+section h3 {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #007bff;
+  font-weight: 700;
+}
+
+section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.projects {
+  background-image: url('assets/header_bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+}
+
+.projects h2 {
+  color: #000000;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;  
+}
+
+.skills-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer {
+  background-image: url('assets/header_bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  width: 100vw;
+  height: 25rem;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: -50vw;
+}
+
+footer h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 4rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.icon {
+  text-decoration: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #007bff13;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.icon > i {
+  color: #007bff;
+  font-size: 1.3rem;
+  transition: all 0.2s;
+}
+
+.icon:hover > i {
+  scale: 1.2;
+  color: #f5f9f8;
+}
+
+.icon:before {
+  background: var(--color);
+  content: "";
+  position: absolute;
+  width: 130%;
+  height: 130%;
+  left: -110%;
+  top: 80%;
+  transform: rotate(45deg);
+}
+
+.icon:hover:before {
+  animation: slide 0.7s forwards;
+}
+
+@keyframes slide {
+  50% {
+    left: 10%;
+    top: -40%;
+  }
+
+  100% {
+    left: -15%;
+    top: -15%;
+  }
+}
+
+.icon:has(.fa-instagram) {
+  --color: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+.icon:has(.fa-linkedin-in) {
+  --color: #0077b5;
+}
+.icon:has(.fa-youtube) {
+  --color: #ff0000;
+}
+.icon:has(.fa-x-twitter) {
+  --color: #1da1f2;
+}
+.icon:has(.fa-github) {
+  --color: #333;
+}
+
+.icon:has(.fa-envelope) {
+  --color: #ff0000;
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  header {
+    padding: 1rem 0;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  section p {
+    font-size: 0.875rem;
+  }
+
+  .project-card {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  footer {
+    padding: 0.5rem 0;
+  }
+
+  footer p {
+    font-size: 0.875rem;
+  }
+
+  footer h2 {
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  header p {
+    font-size: 0.875rem;
+  }
+
+  section h2 {
+    font-size: 1.25rem;
+  }
+
+  section p {
+    font-size: 0.75rem;
+  }
+
+  .project-card {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  footer p {
+    font-size: 0.75rem;
+  }
+
+  footer h2 {
+    font-size: 1.25rem;
+  }
+
+  .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
