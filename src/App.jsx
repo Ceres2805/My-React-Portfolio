@@ -13,7 +13,7 @@ return (
         <div id="home">
             <header>
                 <h1>Welcome to My Portfolio</h1>
-                <p>Hi 🖐, I'm Aritra, an aspiring engineer</p>
+                <p>Hi 🖐, I'm Aritra, an aspiring developer</p>
             </header>
             <section id="about">
                 <h2>About Me</h2>
@@ -53,14 +53,14 @@ return (
                     {[
                         "c-lang", "Cpp", "C_sharp", "HTML", "CSS", "javascript", "react", "bootstrap", "tailwind", "MySQL", "Git", "GitHub", "unity","Python", "TensorFlow"
                     ].map((skill, index) => (
-                        <SkillCard key={index} title={skill} imageUrl={`src/assets/${skill.toLowerCase().replace(/\s/g, '_')}.png`} />
+                        <SkillCard key={index} title={skill} imageUrl={`src/assets/logos/${skill.toLowerCase().replace(/\s/g, '_')}.png`} />
                     ))}
                 </div>
                 <div className="skills-container">
                     {[
                         "Proteus", "LTSpice", "LabVIEW", "EasyEDA", "KiCad", "Matlab", "Simulink"
                     ].map((skill, index) => (
-                        <SkillCard key={index} title={skill} imageUrl={`src/assets/${skill.toLowerCase().replace(/\s/g, '_')}.png`} />
+                        <SkillCard key={index} title={skill} imageUrl={`src/assets/logos/${skill.toLowerCase().replace(/\s/g, '_')}.png`} />
                     ))}
                 </div>
             </section>
