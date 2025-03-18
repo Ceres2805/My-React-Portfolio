@@ -29,9 +29,9 @@ return (
                 <h3>Software Developement Projects</h3>
                 <div className="projects-container">
                     {[
-                        { title: "ML Algorithms from scratch", description: "Implementation of various machine learning algorithms from scratch", imageUrl: "My-React-Portfolio/public/ml_from_scratch.jpg", projectUrl: "https://example.com" },
-                        { title: "Pathfinding Algorithm Visualizer", description: "A Unity 3D Project to visualize various pathfinding algorithms", imageUrl: "My-React-Portfolio/public/algo_viz.gif", projectUrl: "https://example.com" },
-                        { title: "Quantum Squares", description: "A two-player web based game developed using HTML, CSS, and JavaScript", imageUrl: "My-React-Portfolio/public/quantum_sq.gif", projectUrl: "https://example.com" }
+                        { title: "ML Algorithms from scratch", description: "Implementation of various machine learning algorithms from scratch", imageUrl: "/ml_from_scratch.jpg", projectUrl: "https://example.com" },
+                        { title: "Pathfinding Algorithm Visualizer", description: "A Unity 3D Project to visualize various pathfinding algorithms", imageUrl: "/algo_viz.gif", projectUrl: "https://example.com" },
+                        { title: "Quantum Squares", description: "A two-player web based game developed using HTML, CSS, and JavaScript", imageUrl: "/quantum_sq.gif", projectUrl: "https://example.com" }
                     ].map((project, index) => (
                         <ProjectCard key={index} {...project} />
                     ))}
@@ -39,9 +39,9 @@ return (
                 <h3>Electrical/Electronics Projects</h3>
                 <div className="projects-container">
                     {[
-                        { title: "Arduino based Battery Monitor", description: "A compact PCB design to monitor battery voltage using Arduino", imageUrl: "My-React-Portfolio/public/pcb.png", projectUrl: "https://example.com" },
-                        { title: "Satellite Attitude Control System", description: "A MATLAB simulation to control the attitude of a satellite", imageUrl: "My-React-Portfolio/public/sat_control.jpg", projectUrl: "https://example.com" },
-                        { title: "AM Radio Communication System Simulation", description: "An LTSpice simulation of an AM radio communication system", imageUrl: "My-React-Portfolio/public/Graph.png", projectUrl: "https://example.com" },
+                        { title: "Arduino based Battery Monitor", description: "A compact PCB design to monitor battery voltage using Arduino", imageUrl: "/pcb.png", projectUrl: "https://example.com" },
+                        { title: "Satellite Attitude Control System", description: "A MATLAB simulation to control the attitude of a satellite", imageUrl: "/sat_control.jpg", projectUrl: "https://example.com" },
+                        { title: "AM Radio Communication System Simulation", description: "An LTSpice simulation of an AM radio communication system", imageUrl: "/Graph.png", projectUrl: "https://example.com" },
                     ].map((project, index) => (
                         <ProjectCard key={index} {...project} />
                     ))}
@@ -53,14 +53,14 @@ return (
                     {[
                         "c-lang", "Cpp", "C_sharp", "HTML", "CSS", "javascript", "react", "bootstrap", "tailwind", "MySQL", "Git", "GitHub", "unity","Python", "TensorFlow"
                     ].map((skill, index) => (
-                        <SkillCard key={index} title={skill} imageUrl={`My-React-Portfolio/public/${skill.toLowerCase().replace(/\s/g, '_')}.png`} />
+                        <SkillCard key={index} title={skill} imageUrl={`public/${skill.toLowerCase().replace(/\s/g, '_')}.png`} />
                     ))}
                 </div>
                 <div className="skills-container">
                     {[
                         "Proteus", "LTSpice", "LabVIEW", "EasyEDA", "KiCad", "Matlab", "Simulink"
                     ].map((skill, index) => (
-                        <SkillCard key={index} title={skill} imageUrl={`My-React-Portfolio/public/${skill.toLowerCase().replace(/\s/g, '_')}.png`} />
+                        <SkillCard key={index} title={skill} imageUrl={`public/${skill.toLowerCase().replace(/\s/g, '_')}.png`} />
                     ))}
                 </div>
             </section>
