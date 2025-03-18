@@ -53,14 +53,14 @@ return (
                     {[
                         "c-lang", "Cpp", "C_sharp", "HTML", "CSS", "javascript", "react", "bootstrap", "tailwind", "MySQL", "Git", "GitHub", "unity","Python", "TensorFlow"
                     ].map((skill, index) => (
-                        <SkillCard key={index} title={skill} imageUrl={`public/${skill.toLowerCase().replace(/\s/g, '_')}.png`} />
+                        <SkillCard key={index} title={skill} imageUrl={`/${skill.toLowerCase().replace(/\s/g, '_')}.png`} />
                     ))}
                 </div>
                 <div className="skills-container">
                     {[
                         "Proteus", "LTSpice", "LabVIEW", "EasyEDA", "KiCad", "Matlab", "Simulink"
                     ].map((skill, index) => (
-                        <SkillCard key={index} title={skill} imageUrl={`public/${skill.toLowerCase().replace(/\s/g, '_')}.png`} />
+                        <SkillCard key={index} title={skill} imageUrl={`/${skill.toLowerCase().replace(/\s/g, '_')}.png`} />
                     ))}
                 </div>
             </section>
