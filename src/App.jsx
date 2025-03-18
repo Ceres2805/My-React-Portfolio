@@ -13,7 +13,7 @@ return (
         <div id="home" className='font-mono'>
             <header>
                 <h1>Welcome to My Portfolio</h1>
-                <p>Hi 🖐, I'm Aritra, an aspiring engineer</p>
+                <p>Hi 🖐, I'm Aritra, an aspiring developer</p>
             </header>
             <section id="about">
                 <h2>About Me</h2>
