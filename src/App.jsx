@@ -29,9 +29,9 @@ return (
                 <h3>Software Developement Projects</h3>
                 <div className="projects-container">
                     {[
-                        { title: "ML Algorithms from scratch", description: "Implementation of various machine learning algorithms from scratch", imageUrl: "/ml_from_scratch.jpg", projectUrl: "https://example.com" },
-                        { title: "Pathfinding Algorithm Visualizer", description: "A Unity 3D Project to visualize various pathfinding algorithms", imageUrl: "/algo_viz.gif", projectUrl: "https://example.com" },
-                        { title: "Quantum Squares", description: "A two-player web based game developed using HTML, CSS, and JavaScript", imageUrl: "/quantum_sq.gif", projectUrl: "https://example.com" }
+                        { title: "ML Algorithms from scratch", description: "Implementation of various machine learning algorithms from scratch", imageUrl: "/ml_from_scratch.jpg", projectUrl: "https://github.com/Ceres2805/ML-from-scratch" },
+                        { title: "Pathfinding Algorithm Visualizer", description: "A Unity 3D Project to visualize various pathfinding algorithms", imageUrl: "/algo_viz.gif", projectUrl: "https://github.com/Ceres2805/Algorithm-Visualiser" },
+                        { title: "Quantum Squares", description: "A two-player web based game developed using HTML, CSS, and JavaScript", imageUrl: "/quantum_sq.gif", projectUrl: "https://github.com/Ceres2805/Quantum-Squares" }
                     ].map((project, index) => (
                         <ProjectCard key={index} {...project} />
                     ))}
@@ -39,9 +39,9 @@ return (
                 <h3>Electrical/Electronics Projects</h3>
                 <div className="projects-container">
                     {[
-                        { title: "Arduino based Battery Monitor", description: "A compact PCB design to monitor battery voltage using Arduino", imageUrl: "/pcb.png", projectUrl: "https://example.com" },
-                        { title: "Satellite Attitude Control System", description: "A MATLAB simulation to control the attitude of a satellite", imageUrl: "/sat_control.jpg", projectUrl: "https://example.com" },
-                        { title: "AM Radio Communication System Simulation", description: "An LTSpice simulation of an AM radio communication system", imageUrl: "/Graph.png", projectUrl: "https://example.com" },
+                        { title: "Arduino based Battery Monitor", description: "A compact PCB design to monitor battery voltage using Arduino", imageUrl: "/pcb.png", projectUrl: "https://github.com/Ceres2805/BatteryMonitor_Arduino" },
+                        { title: "Satellite Attitude Control System", description: "A MATLAB simulation to control the attitude of a satellite", imageUrl: "/sat_control.jpg", projectUrl: "https://github.com/Ceres2805/Satellite-Attitude-Control-System" },
+                        { title: "AM Radio Communication System Simulation", description: "An LTSpice simulation of an AM radio communication system", imageUrl: "/Graph.png", projectUrl: "https://github.com/Ceres2805/AM-Radio-Communication-System-Simulation" },
                     ].map((project, index) => (
                         <ProjectCard key={index} {...project} />
                     ))}
@@ -68,9 +68,9 @@ return (
                 <h2>Let's Connect!</h2>
                 <div className="wrapper">
                     {[
-                        { icon: "fa-solid fa-envelope", link: "#" },
-                        { icon: "fa-brands fa-linkedin-in", link: "#" },
-                        { icon: "fa-brands fa-github", link: "#" }
+                        { icon: "fa-solid fa-envelope", link: "mailto:beraaritra28@gmail.com" },
+                        { icon: "fa-brands fa-linkedin-in", link: "https://github.com/Ceres2805" },
+                        { icon: "fa-brands fa-github", link: "https://www.linkedin.com/in/aritra-bera-33106b286" }
                     ].map((contact, index) => (
                         <a key={index} href={contact.link} className="icon"><i className={`${contact.icon}`}></i></a>
                     ))}
