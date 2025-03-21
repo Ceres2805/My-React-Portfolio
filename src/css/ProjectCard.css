@@ -31,7 +31,7 @@
 }
 
 .project-description {
-    font-size: 1em;
+    font-size: 1rem;
     color: #666;
     margin: 0 0 20px;
 }
@@ -48,4 +48,19 @@
 .project-link:hover {
     background-color: #0056b3;
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 1.25rem;
+    }   
+    .project-description {
+        font-size: 0.75rem;
+    }
+    .project-card {
+        width: 300px;
+    }
+    .project-image {
+        height: 180px;
+    }
 }
