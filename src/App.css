@@ -234,6 +234,10 @@ footer p {
     font-size: 1.5rem;
   }
 
+  section h3 {
+    font-size: 1.25rem;
+  }
+
   section p {
     font-size: 0.875rem;
   }
@@ -272,6 +276,10 @@ footer p {
 
   section h2 {
     font-size: 1.25rem;
+  }
+
+  section h3 {
+    font-size: 1.0rem;
   }
 
   section p {

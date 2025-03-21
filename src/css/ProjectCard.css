@@ -52,15 +52,15 @@
 
 @media (max-width: 768px) {
     .project-title {
-        font-size: 1.25rem;
+        font-size: 1.0rem;
     }   
     .project-description {
         font-size: 0.75rem;
     }
-    .project-card {
-        width: 300px;
+    .project-link {
+        font-size: 0.75rem;
     }
     .project-image {
-        height: 180px;
+        height: 170px;
     }
 }
