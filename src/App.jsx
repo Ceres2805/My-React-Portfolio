@@ -51,7 +51,7 @@ return (
                 <h2>Technologies & Frameworks</h2>
                 <div className="skills-container">
                     {[
-                        "c-lang", "Cpp", "C_sharp", "HTML", "CSS", "javascript", "react", "bootstrap", "tailwind", "MySQL", "Git", "GitHub", "unity","Python", "TensorFlow"
+                        "c-lang", "Cpp", "C_sharp", "HTML", "CSS", "javascript", "react", "bootstrap", "tailwind", "Git", "GitHub", "unity","Python"
                     ].map((skill, index) => (
                         <SkillCard key={index} title={skill} imageUrl={`/${skill.toLowerCase().replace(/\s/g, '_')}.png`} />
                     ))}
@@ -69,8 +69,8 @@ return (
                 <div className="wrapper">
                     {[
                         { icon: "fa-solid fa-envelope", link: "mailto:beraaritra28@gmail.com" },
-                        { icon: "fa-brands fa-linkedin-in", link: "https://github.com/Ceres2805" },
-                        { icon: "fa-brands fa-github", link: "https://www.linkedin.com/in/aritra-bera-33106b286" }
+                        { icon: "fa-brands fa-linkedin-in", link: "https://www.linkedin.com/in/aritra-bera-33106b286" },
+                        { icon: "fa-brands fa-github", link: "https://github.com/Ceres2805" }
                     ].map((contact, index) => (
                         <a key={index} href={contact.link} className="icon"><i className={`${contact.icon}`}></i></a>
                     ))}
