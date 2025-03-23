@@ -51,7 +51,7 @@ return (
                 <h2>Technologies & Frameworks</h2>
                 <div className="skills-container">
                     {[
-                        "c-lang", "Cpp", "C_sharp", "HTML", "CSS", "javascript", "react", "bootstrap", "tailwind", "Git", "GitHub", "unity","Python"
+                        "c-lang", "Cpp", "C_sharp", "HTML", "CSS", "javascript", "react", "nextjs", "bootstrap", "tailwind", "Git", "GitHub", "unity","Python"
                     ].map((skill, index) => (
                         <SkillCard key={index} title={skill} imageUrl={`/${skill.toLowerCase().replace(/\s/g, '_')}.png`} />
                     ))}
